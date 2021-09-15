@@ -8,11 +8,12 @@
 //-------Aliases-------//
 private alias 6 : TYPE_SHOOTINGSTAR
 
-public alias object.value0 : shootingStar.countdown
+
+// Tables
 
 event ObjectMain
-	if shootingStar.countdown > 0
-		shootingStar.countdown--
+	if object.value0 > 0
+		object.value0--
 	else
 		object.xpos -= 0x20000
 		object.ypos += 0x10000
